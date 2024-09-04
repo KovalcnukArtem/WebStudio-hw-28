@@ -521,8 +521,8 @@ a:hover {
   transition: all 1s;
 }
 .regular-customers-item:hover {
-  border: solid #2196f3;
-  transition: all 1s;
+  border-color: #2196f3;
+  transition: all 500ms;
 }
 
 
@@ -561,12 +561,6 @@ a:hover {
 .footer-social {
   display: flex;
 }
-/* .footer-title {
-  margin-left: 50px;
-} */
-/* .footer-social-item {
-  margin-top: 150px;
-} */
 .footer-adress {
   margin-right: 70px;
 }
@@ -585,13 +579,14 @@ a:hover {
   margin-left: 10px;
 
   transition: background-color var(--duration) var(--cubic);
-  transform: var(--duration) var(--cubic);;
+  transform: scale(1);
+  transition: background-color var(--duration) var(--cubic);
+  transform: var(--duration) var(--cubic);
 }
 .footer-social-item:is(:hover, :focus) {
   background-color: rgba(33, 150, 243, 1.00);
   border-radius: 50px;
   transform: scale(1.2);
-  /* transition: all 1s; */
 }
 .footer-social-item:is(:hover, :focus) .footer-social-icon {
   fill: #ffffff;
@@ -707,8 +702,13 @@ a:hover {
   padding: 10px 20px;
   color: #000000;
   cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
-  transition: background-color var(--duration) var(--cubic), color var(--duration) var(--cubic), box-shadow var(--duration) var(--cubic); ;
+  /* transition: background-color 0.3s, color 0.3s; */
+  /* transition: background-color var(--duration) var(--cubic), color var(--duration) var(--cubic), box-shadow var(--duration) var(--cubic); ;
+} */
+  transition: background-color var(--duration) var(--cubic);
+  transform: scale(1);
+  transition: background-color var(--duration) var(--cubic);
+  transform: var(--duration) var(--cubic);
 }
 .portfolio-filter-button:hover {
   background-color: #2196f3;
